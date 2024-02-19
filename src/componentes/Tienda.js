@@ -1,13 +1,14 @@
 import React from 'react';
+import Productos from './Productos'
 
-const Tienda = () => {
+const Tienda = ({productos, agregarProductoAlCarrito}) => {
     return (
         <div>
             <h1>Tienda</h1>
-            <p>Este es un texto fake de inicio escribo palabras
-                random para tenerlas en mi inicio ¿cuantas palabras
-                random mas debo poner en mi inicio?
-            </p>
+            <Productos 
+            productos={productos} 
+            agregarProductoAlCarrito={agregarProductoAlCarrito}
+             />
         </div>
     )
 }
